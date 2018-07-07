@@ -81,7 +81,7 @@ class MainActivityKotlin : AppCompatActivity() {
             if (result == null) {
                 textView.text = "Oops! An error ocurred!"
             } else {
-                textView.text = result
+                textView.append(result + "\n")
             }
         }
     }

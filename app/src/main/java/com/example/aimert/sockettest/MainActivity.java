@@ -113,8 +113,8 @@ public class MainActivity extends AppCompatActivity {
             TextView responseTextView = activityReference.get().findViewById(R.id.testResponseText);
             if (response == null) {
                 responseTextView.setText("Oops! An error ocurred!");
-            } else if (response.trim().length() != 0) {
-                responseTextView.setText(response);
+            } else {
+                responseTextView.append(response + "\n");
             }
         }
     }
